@@ -130,7 +130,7 @@ function getStartTime() {
   let d = new Date();
   setStartTimeFull = d;
   setStartTime = d.toLocaleTimeString();
-  document.getElementById("startTime").value = setStartTime;
+  document.getElementById("startTime").innerText = setStartTime;
   return setStartTime;
 }
 
@@ -140,7 +140,7 @@ function getStopTime() {
   let d = new Date();
   setStopTimeFull = d;
   setStopTime = d.toLocaleTimeString();
-  document.getElementById("stopTime").value = setStopTime;
+  document.getElementById("stopTime").innerText = setStopTime;
   return setStopTime;
 }
 
@@ -148,7 +148,9 @@ function getStopwatchDuration() {
   event.preventDefault();
   const newStopwatch = new Stopwatch(setStartTimeFull, setStopTimeFull);
   newStopwatch.getDuration();
-  document.getElementById("durationTime").value = newStopwatch.getDuration();
+  document.getElementById(
+    "durationTime"
+  ).innerText = newStopwatch.getDuration();
 }
 
 startStopwatch.onclick = getStartTime;
