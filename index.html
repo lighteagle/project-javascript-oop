@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Learn - OOP, DOM, Date</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Section Car -->
   <section>
-    <h1>== C A R ==</h1>
     <form action="">
+      <h1>== C A R ==</h1>
       <label for="">Owner</label>
       <input type="text" id='carOwner' placeholder="Input Owner name">
       <br>
@@ -20,14 +22,15 @@
       <input type="text" id='carName' placeholder="Input Car name">
       <br>
       <button id='addCar'> Add Car</button>
+      <br>
       <label for="" id='newCar'></label>
     </form>
   </section>
 
   <!-- Section Car -->
   <section>
-    <h1>== S P O R T S &nbsp; C A R ==</h1>
     <form action="">
+      <h1>== S P O R T S &nbsp; C A R ==</h1>
       <label for="">Color</label>
       <input type="text" id='carColor' placeholder="Input Car's Color">
       <br>
@@ -38,26 +41,28 @@
       <input type="text" id='carEngine' placeholder="Input Car's Engine">
       <br>
       <button id='addSportsCar'> Add Sports Car</button>
+      <br>
       <label for="" id='newSportsCar'></label>
     </form>
   </section>
 
   <!-- Section StopWatch -->
   <section>
-    <h1>== S T O P W A T C H ==</h1>
+    <form action="">
+      <h1>== S T O P W A T C H ==</h1>
+      <button id='startStopwatch'> Start</button>
 
-    <button id='startStopwatch'> Start</button>
-
-    <!-- <input type="text" id='startTime'> -->
-    <label for="" id='startTime'></label>
-    <br>
-    <button id='stopStopwatch'> Stop</button>
-    <label for="" id='stopTime'></label>
-    <!-- <input type="text" id='stopTime'> -->
-    <br>
-    <button id='stopwatchDuration'> Duration</button>
-    <label for="" id='durationTime'></label>
-    <!-- <input type="text" id='durationTime'> -->
+      <!-- <input type="text" id='startTime'> -->
+      <label for="" id='startTime'></label>
+      <br>
+      <button id='stopStopwatch'> Stop</button>
+      <label for="" id='stopTime'></label>
+      <!-- <input type="text" id='stopTime'> -->
+      <br>
+      <button id='stopwatchDuration'> Duration</button>
+      <label for="" id='durationTime'></label>
+      <!-- <input type="text" id='durationTime'> -->
+    </form>
   </section>
 
   <script src="index.js"></script>
